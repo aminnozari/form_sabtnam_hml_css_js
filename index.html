@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <link type="text/css" rel="stylesheet" href="style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>form sabt nam</title>
+    </head>
+    <body id="mybody">
+        <div id="myform">
+            <div id="sabtenam" onclick="btn_sabtnam()">
+                <div>
+                    <p>ثبت نام</p>
+                </div>
+            </div>
+            <div id="dakheli">
+                <form id="form-dakheli">
+                        <input type="checkbox" onclick="darkMode()" id="dark-mode">
+                        <span id="dark-text">حالت تاریک</span>
+                        <div>
+                            <p class="matn">نام</p>
+                            <input class="inputs" type="text" placeholder="Enter Your Name">
+                        </div>
+                        <div>
+                            <p class="matn">ایمیل</p>
+                            <input class="inputs" type="text" placeholder="Enter Your Email address">    
+                        </div>
+                        <div>
+                            <p class="matn">کلمه عبور</p>
+                            <input class="inputs" type="text" placeholder="Enter Your Password">
+                        </div>
+                        <div id="spouse">
+                            <input type="radio"name="select" onclick="single()"><span class="btn-ezdevaj" >مجرد</span>
+                            <br>
+                            <input type="radio" name="select" onclick="married()"><span class="btn-ezdevaj" >متاهل</span>    
+                        </div>
+                        <div id="spouse-name">
+                            <p class="matn" >نام همسر</p>
+                            <input class="inputs" type="text" placeholder="Enter Your Spouse Name">  
+                        </div>
+                        <div id="check_for_child">
+                        <input type="checkbox" id="checkbox-child" onclick="child()">
+                        <span class="btn-ezdevaj" >دارای فرزند</span>
+                        </div>
+                        <div id="children">
+                            <span >فرزندان</span>
+                            <button class="childs" id="add" type="button" onclick="add_child()">+</button>
+                            <button class="childs" id="delete" type="button" onclick="delete_child()">-</button>
+                            <ul id="child-list"></ul>                       
+                        </div>
+                        <div>
+                            <button id="submit">ثبت نام</button>
+                        </div>    
+                </form>
+            </div>
+        </div>
+    </body>
+    <script src="script.js"></script>
+</html>
